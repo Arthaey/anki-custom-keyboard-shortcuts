@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 # See github page to report issues or to contribute:
 # https://github.com/Arthaey/anki-custom-keyboard-shortcuts
+#
+# Also available for Anki at https://ankiweb.net/shared/info/1483821271
 
 from aqt.qt import QMainWindow
 from aqt.main import AnkiQt

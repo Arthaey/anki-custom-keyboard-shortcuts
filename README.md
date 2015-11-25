@@ -1,5 +1,7 @@
 # Description
 
+**Anki download ID: `1483821271`**
+
 An Anki add-on that lets you customize the following global shortcuts:
 
 - Decks (default "d")
@@ -12,7 +14,8 @@ An Anki add-on that lets you customize the following global shortcuts:
 # Support
 
 Post a [new issue on Github](https://github.com/Arthaey/anki-custom-keyboard-shortcuts/issues/new)
-(or make a pull request!).
+(or make a pull request!). You can also write a review or ask questions on the
+[Anki website for shared add-ons](https://ankiweb.net/shared/info/1483821271).
 
 [My other Anki add-ons](https://github.com/search?q=user%3AArthaey+anki)
 are also on Github.
