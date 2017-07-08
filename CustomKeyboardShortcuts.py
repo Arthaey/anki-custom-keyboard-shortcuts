@@ -7,12 +7,35 @@
 from aqt.qt import QMainWindow
 from aqt.main import AnkiQt
 
+################################################################################
+#
+# USER-MODIFABLE SETTINGS. CHANGE THINGS HERE TO THE SETTINGS YOU WANT.
+#
+################################################################################
+
+# CUSTOMIZE THESE SHORTCUT KEYS.
 GLOBAL_DECKS_SHORTCUT    = "d"
 GLOBAL_OVERVIEW_SHORTCUT = "s"
 GLOBAL_ADD_SHORTCUT      = "a"
 GLOBAL_BROWSE_SHORTCUT   = "b"
 GLOBAL_STATS_SHORTCUT    = "S"
 GLOBAL_SYNC_SHORTCUT     = "y"
+
+# TO DISABLE A SHORTCUT ENTIRELY, DELETE THE '#' IN FRONT OF IT.
+DISABLED_SHORTCUTS = [
+    #GLOBAL_DECKS_SHORTCUT,
+    #GLOBAL_OVERVIEW_SHORTCUT,
+    #GLOBAL_ADD_SHORTCUT,
+    #GLOBAL_BROWSE_SHORTCUT,
+    #GLOBAL_STATS_SHORTCUT,
+    #GLOBAL_SYNC_SHORTCUT,
+]
+
+################################################################################
+#
+# DO NOT CHANGE ANYTHING BELOW HERE UNLESS YOU KNOW WHAT YOU'RE DOING. :)
+#
+################################################################################
 
 # Copy-pasted from aqt/main.py
 def _keyPressEvent(self, evt):
@@ -25,6 +48,10 @@ def _keyPressEvent(self, evt):
     QMainWindow.keyPressEvent(self, evt)
     # check global keys
     key = unicode(evt.text())
+
+    if key in DISABLED_SHORTCUTS:
+        return
+
     if key == GLOBAL_DECKS_SHORTCUT:
         self.moveToState("deckBrowser")
     elif key == GLOBAL_OVERVIEW_SHORTCUT:
