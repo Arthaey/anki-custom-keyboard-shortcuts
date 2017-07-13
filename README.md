@@ -11,6 +11,12 @@ An Anki add-on that lets you customize the following global shortcuts:
 - Stats (default "S")
 - Sync (default "y")
 
+You can also disable these shortcuts entirely.
+
+NOTE: You customize this addon's options by editing the addon code.
+Don't be scared, the sections for you to edit are clearly marked at the
+beginning. :)
+
 # Support
 
 Post a [new issue on Github](https://github.com/Arthaey/anki-custom-keyboard-shortcuts/issues/new)
